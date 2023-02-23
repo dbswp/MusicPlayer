@@ -50,6 +50,8 @@ prev.addEventListener("click", function () {
 
   for (let pen of articleArr) {
     pen.classList.remove("on");
+    pen.querySelector("audio").pause();
+    pen.querySelector(".pic").classList.remove("on");
   }
   articleArr[active].classList.add("on");
 });
@@ -64,6 +66,8 @@ next.addEventListener("click", function () {
 
   for (let pen of articleArr) {
     pen.classList.remove("on");
+    pen.querySelector("audio").pause();
+    pen.querySelector(".pic").classList.remove("on");
   }
   articleArr[active].classList.add("on");
 });
